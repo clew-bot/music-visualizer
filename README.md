@@ -1,4 +1,4 @@
-# Music Visualizer 🎶
+# JS Music Visualizer 🎶
 
 1. Open index.html
 2. Choose song
