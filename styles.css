@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: black;
+    z-index: 101;
+    position: absolute;
+    font-size: 5rem;
+    color: white;;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
+    margin-left: calc(50% - 80px);
+}
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(90deg, rgba(155,184,59,1) 0%, rgba(53,221,91,1) 47%, rgba(0,212,255,1) 100%); */
+    width: 100%;
+    height: 100%;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(5px) contrast(200%) brightness(50%); */
+
+}
+
+#audio1 {
+    width: 50%;
+    margin: 100px auto;
+    display: block;
+}
+
+#fileupload {
+    position: absolute;
+    top: 150px;
+    color: white;
+    z-index: 100;
+}
+#doge {
+    display:none;
+}
+
+#doge2 {
+    position: absolute;
+    left: 65%;
+    top: 265px;
+    transform: scaleX(-1);
+}
+#doge3 {
+    position: absolute;
+    left: 35%;
+    top: 605px;
+    transform: scaleX(-1);
+    opacity: 0;
+    transition:cubic-bezier(1, 0, 0, 1) 0.5s;
+}
+
+#doge3:hover {
+    opacity: 1;
+}
+.gif-container {
+    position: absolute;
+    left: 75%;
+    top:7.8%;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+}
+
+@media(max-width: 600px) {
+    #doge2 {
+        display: none;
+    }
+    #container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: solid 1px black;
+        background: linear-gradient(90deg, rgba(155,184,59,1) 0%, rgba(53,221,91,1) 47%, rgba(0,212,255,1) 100%);
+        width: 500px;
+        height: 100%;
+    }
+    
+    #canvas1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* filter: blur(5px) contrast(200%) brightness(50%); */
+    
+    }
+
+
+}
